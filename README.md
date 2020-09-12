@@ -19,3 +19,6 @@ python3 map.py
 ```
 
 5. Go to http://127.0.0.1:5000
+
+## Demo
+![](readme/demo.gif)
