@@ -1,16 +1,17 @@
 
 import requests
+import os
 from flask import Flask,render_template
-from secret import api_key
 
 URL = "https://discover.search.hereapi.com/v1/discover"
 latitude = 32.715736
 longitude = -117.161087
 query = 'hospital'
 limit = 5
+api_key = os.environ.get('HEREAPIKEY')
 
 PARAMS = {
-            'apikey':api_key,
+            'apikey': api_key,
             'q':query,
             'limit': limit,
             'at':'{},{}'.format(latitude,longitude)

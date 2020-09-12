@@ -4,7 +4,8 @@
 1. Run the following command to install necessary libraries.
     `pip3 install -r requirements.txt`
 
-2. Create `secret.py` and place in top level directory of the project
+2. Set Environment Variable `HEREAPIKEY` with key. Below is an example for Mac Terminal:
+    `export HEREAPIKEY=givenkeyfromwebsite`
 
 3. Run the following command in the app's directory to run the web app.
     `python3 map.py`
